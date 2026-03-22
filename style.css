@@ -1,4 +1,3 @@
-/* Базові налаштування */
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +23,6 @@ img {
     border-radius: 4px;
 }
 
-/* Шапка сайту */
 .header {
     background-color: #2c3e50;
     padding: 15px 30px;
@@ -57,7 +55,6 @@ img {
     background-color: #34495e;
 }
 
-/* Головний банер */
 .hero {
     background-color: #555;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1920&auto=format&fit=crop');
@@ -79,7 +76,6 @@ img {
     margin-bottom: 20px;
 }
 
-/* Кнопки */
 .btn {
     display: inline-block;
     background-color: #007bff;
@@ -96,7 +92,6 @@ img {
     background-color: #0056b3;
 }
 
-/* Основний контент */
 .main {
     flex: 1;
     padding: 0 30px;
@@ -118,7 +113,6 @@ img {
     padding-bottom: 5px;
 }
 
-/* Сітка подій */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -172,7 +166,6 @@ img {
     margin-bottom: 10px;
 }
 
-/* Бронювання та Про нас */
 .booking-list, .about-grid {
     background: #fff;
     border: 1px solid #ddd;
@@ -209,7 +202,6 @@ img {
     margin-bottom: 10px;
 }
 
-/* Футер */
 .footer {
     background-color: #2c3e50;
     color: #ccc;
@@ -232,7 +224,6 @@ img {
     font-size: 14px;
 }
 
-/* Адаптивність (Планшети та Телефони) */
 @media (max-width: 992px) {
     .events-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -260,4 +251,23 @@ img {
         text-align: center;
         gap: 20px;
     }
+}
+.booking-controls {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ticket-quantity {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.booking-info strong {
+    color: #007bff;
 }
